@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AutorPageRoutingModule } from './autor-routing.module';
 
 import { AutorPage } from './autor.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AutorPageRoutingModule
+    AutorPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [AutorPage]
 })

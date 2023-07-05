@@ -7,9 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'cv',
+    loadChildren: () => import('./cv/cv.module').then( m => m.CvPageModule)
   },
   {
     path: 'autor',
@@ -19,22 +18,7 @@ const routes: Routes = [
     path: 'biblioteca',
     loadChildren: () => import('./biblioteca/biblioteca.module').then( m => m.BibliotecaPageModule)
   },
-  {
-    path: 'cv',
-    loadChildren: () => import('./cv/cv.module').then( m => m.CvPageModule)
-  },
-  {
-    path: 'autor',
-    loadChildren: () => import('./components/autor/autor.module').then( m => m.AutorPageModule)
-  },
-  {
-    path: 'cv',
-    loadChildren: () => import('./components/cv/cv.module').then( m => m.CvPageModule)
-  },
-  {
-    path: 'biblioteca',
-    loadChildren: () => import('./components/biblioteca/biblioteca.module').then( m => m.BibliotecaPageModule)
-  },
+  
 ];
 
 @NgModule({
